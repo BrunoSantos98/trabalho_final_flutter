@@ -14,8 +14,9 @@ class ChooseScreen extends StatelessWidget {
               color: Colors.white
           ),
         ),
+        automaticallyImplyLeading: false,
         centerTitle: true,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.blueAccent,
       ),
       body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -23,7 +24,12 @@ class ChooseScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 24),
-            const Text("O que você gostaria hoje?"),
+            const Text(
+                "O que você gostaria hoje?",
+              style: TextStyle(
+                fontSize: 24
+              ),
+            ),
             const SizedBox(height: 24),
             Expanded(
                 child:

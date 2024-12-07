@@ -28,7 +28,10 @@ class _CustomButtonState extends State<CustomButton> {
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
         onPressed: widget.onPressed,
-        icon: widget.icon ?? Container(),
+        icon: widget.icon != null ? Icon(
+          widget.icon!.icon,
+          color: widget.textColor
+        ) : Container() ,
         label: Text(
          widget.text,
          style: TextStyle(

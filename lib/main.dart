@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/welcome' : (context) => const WelcomeScreen(),
         '/choose_screen': (context) => const ChooseScreen(),
-        '/get_advice_screen': (context) => const GetAdviceScreen(),
+        '/get_advice_screen': (context) => GetAdviceScreen(),
       },
       initialRoute: '/welcome',
     );

@@ -24,4 +24,3 @@ class Slip{
 
   Map<String, dynamic> toJson() => _$SlipToJson(this);
 }
-// {"slip": { "id": 58, "advice": "Don't give a speech. Put on a show."}}

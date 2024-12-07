@@ -14,7 +14,7 @@ class _RestAdviceClient implements RestAdviceClient {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'https://api.adviceslip.com/';
+    baseUrl ??= 'https://api.adviceslip.com';
   }
 
   final Dio _dio;
@@ -36,7 +36,7 @@ class _RestAdviceClient implements RestAdviceClient {
     )
         .compose(
           _dio.options,
-          'advice',
+          '/advice',
           queryParameters: queryParameters,
           data: _data,
         )
