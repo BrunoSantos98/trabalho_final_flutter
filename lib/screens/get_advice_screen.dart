@@ -28,7 +28,8 @@ class GetAdviceScreen extends StatelessWidget {
           final dio = Dio();
           dio.interceptors.add(HtmlToJsonInterceptor());
           final restAdviceClient = RestAdviceClient(dio);
-          final cubitAdvice = CubitAdvice(restAdviceClient);
+          final databaseHelper = DatabaseHelper();
+          final cubitAdvice = CubitAdvice(restAdviceClient, databaseHelper);
 
           Future.microtask(() => cubitAdvice.fetchAdvice());
 

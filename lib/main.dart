@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_project/screens/advice_detail_screen.dart';
 import 'package:flutter_final_project/screens/choose_screen.dart';
 import 'package:flutter_final_project/screens/get_advice_screen.dart';
+import 'package:flutter_final_project/screens/saved_advices_screen.dart';
 import 'package:flutter_final_project/screens/welcome_screen.dart';
 
 void main() {
@@ -39,6 +41,8 @@ class MyApp extends StatelessWidget {
         '/welcome' : (context) => const WelcomeScreen(),
         '/choose_screen': (context) => const ChooseScreen(),
         '/get_advice_screen': (context) => GetAdviceScreen(),
+        '/saved_advices': (context) => SavedAdvicesScreen(),
+        '/advice_detail': (context) => AdviceDetailScreen(),
       },
       initialRoute: '/welcome',
     );

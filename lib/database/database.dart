@@ -45,7 +45,7 @@ class DatabaseHelper{
 
   Future<List<String>> getAllAdvices() async{
     final db = await _instance.database;
-    final List<Map<String,dynamic>> maps = await db.query('advice');
+    final List<Map<String,dynamic>> maps = await db.query('advices');
     return List.generate(maps.length, (i){
       return maps[i]['advice'] as String;
     });

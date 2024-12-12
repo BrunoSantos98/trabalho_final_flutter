@@ -50,7 +50,9 @@ class ChooseScreen extends StatelessWidget {
                         title: "Conselhos salvos",
                         subtitle: "Veja conselhos salvos ",
                         actionText: "Rever Conselhos",
-                        onPressed: (){}
+                        onPressed: (){
+                          Navigator.pushNamed(context, "/saved_advices");
+                        }
                     ),
                   ],
                 )
